@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Aileron-Thin';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron-UltraLight';
+    src: url('fonts/Aileron-UltraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('fonts/Aileron-Regular.ttf') format('truetype');
+    font-style: normal;
+}

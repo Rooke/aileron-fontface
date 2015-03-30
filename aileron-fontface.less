@@ -1,0 +1,27 @@
+@aileron-font-path: 'fonts';
+
+.aileron-font(@type, @weight, @style) {
+    @font-face {
+        font-family: 'Aileron';
+        src: url('@{aileron-font-path}/Aileron-@{type}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+
+    @font-face {
+        font-family: 'Aileron-@{type}';
+        src: url('@{aileron-font-path}/Aileron-@{type}.ttf') format('truetype');
+    }
+}
+
+.aileron-font-pair(@type, @weight) {
+    .aileron-font('@{type}', @weight, normal);
+    .aileron-font('@{type}Italic', @weight, italic);
+}
+
+.aileron-font-pair('Thin', 100);
+.aileron-font-pair('Light', 300);
+.aileron-font-pair('Regular', 400);
+.aileron-font-pair('Medium', 500);
+.aileron-font-pair('Bold', 700);
+.aileron-font-pair('Black', 900);

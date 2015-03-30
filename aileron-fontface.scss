@@ -1,0 +1,27 @@
+$aileron-font-path: 'fonts' !default;
+
+@mixin aileron-font($type, $weight, $style: normal) {
+    @font-face {
+        font-family: 'Aileron';
+        src: url('#{$aileron-font-path}/Aileron-#{$type}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+
+    @font-face {
+        font-family: 'Aileron-#{$type}';
+        src: url('#{$aileron-font-path}/Aileron-#{$type}.ttf') format('truetype');
+    }
+}
+
+@mixin aileron-font-pair($type, $weight) {
+    @include aileron-font($type, $weight);
+    @include aileron-font(#{$type}Italic, $weight, italic);
+}
+
+@include aileron-font-pair('Thin', 100);
+@include aileron-font-pair('Light', 300);
+@include aileron-font-pair('Regular', 400);
+@include aileron-font-pair('Medium', 500);
+@include aileron-font-pair('Bold', 700);
+@include aileron-font-pair('Black', 900);
