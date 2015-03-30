@@ -2,10 +2,8 @@
   "name": "aileron-fontface",
   "version": "0.0.1",
   "main": [
-    "./aileron-fontface.css",
-    "./fonts/Aileron-Thin.ttf",
-    "./fonts/Aileron-UltraLight.ttf",
-    "./fonts/Aileron-Regular.ttf"
+    "./css/aileron-fontface.css",
+    "./fonts/*"
   ],
   "ignore": [
     "**/.*",
